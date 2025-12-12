@@ -8,7 +8,7 @@
  */
 namespace proyecto_final
 {
-	partial class MainForm
+	partial class pasteleria
 	{
 		/// <summary>
 		/// Designer variable used to keep track of non-visual components.
@@ -279,7 +279,7 @@ namespace proyecto_final
 			this.btnImprimir.Text = "Imprimir";
 			this.btnImprimir.UseVisualStyleBackColor = false;
 			// 
-			// MainForm
+			// pasteleria
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -312,7 +312,7 @@ namespace proyecto_final
 			this.Controls.Add(this.rdbSalado);
 			this.Controls.Add(this.rdbDulce);
 			this.Controls.Add(this.pictureBox1);
-			this.Name = "MainForm";
+			this.Name = "pasteleria";
 			this.Text = "POSTRES (PASTELERIA)";
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);

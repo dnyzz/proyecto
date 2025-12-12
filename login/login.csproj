@@ -51,6 +51,22 @@
     <Compile Include="aplicaciones.Designer.cs">
       <DependentUpon>aplicaciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="area.cs" />
+    <Compile Include="area.Designer.cs">
+      <DependentUpon>area.cs</DependentUpon>
+    </Compile>
+    <Compile Include="boleta.cs" />
+    <Compile Include="boleta.Designer.cs">
+      <DependentUpon>boleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conversiones.cs" />
+    <Compile Include="conversiones.Designer.cs">
+      <DependentUpon>conversiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="empleados.cs" />
+    <Compile Include="empleados.Designer.cs">
+      <DependentUpon>empleados.cs</DependentUpon>
+    </Compile>
     <Compile Include="formulario_principal.cs" />
     <Compile Include="formulario_principal.Designer.cs">
       <DependentUpon>formulario_principal.cs</DependentUpon>
@@ -63,8 +79,16 @@
     <Compile Include="pasteleria.Designer.cs">
       <DependentUpon>pasteleria.cs</DependentUpon>
     </Compile>
+    <Compile Include="perimetro.cs" />
+    <Compile Include="perimetro.Designer.cs">
+      <DependentUpon>perimetro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="volumen.cs" />
+    <Compile Include="volumen.Designer.cs">
+      <DependentUpon>volumen.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="aplicaciones.resx">

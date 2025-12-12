@@ -1,26 +1,23 @@
 ﻿/*
  * Created by SharpDevelop.
- * User: CC1_PC09
- * Date: 08/12/2025
- * Time: 02:23 p. m.
+ * User: liset
+ * Date: 12/12/2025
+ * Time: 04:04 p. m.
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using proyecto_final;
 
-
-namespace proyecto_final
+namespace login
 {
 	/// <summary>
-	/// Description of MainForm.
+	/// Description of area.
 	/// </summary>
-	public partial class pasteleria : Form
+	public partial class area : Form
 	{
-		public pasteleria()
+		public area()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
@@ -30,12 +27,6 @@ namespace proyecto_final
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
-		}
-		
-		void CmbSelectProdSelectedIndexChanged(object sender, EventArgs e)
-		{
-	
-    
 		}
 	}
 }

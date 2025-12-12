@@ -9,7 +9,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-
+using proyecto_final;
 namespace login
 {
 	/// <summary>
@@ -30,5 +30,53 @@ namespace login
 		}
 		
 		
+		
+		void PasteleriaToolStripMenuItemClick(object sender, EventArgs e)
+		{
+
+    pasteleria Past = new pasteleria();
+    Past.Show();
+
+
+
+		
+		}
+		
+		void AreaToolStripMenuItemClick(object sender, EventArgs e)
+		{
+		   area areaa = new area();
+    areaa.Show();	
+		}
+		
+		void PerimetroToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			 perimetro per = new perimetro();
+    per.Show();
+		}
+		
+		void CircunferenciaToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			volumen vol = new volumen();
+			vol.Show();
+		}
+		
+		void ConversionesToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			conversiones con = new conversiones();
+			con.Show();
+		}
+		
+		void BoletaDeCalificacionesToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			boleta bol = new boleta();
+			bol.Show();
+		}
+		
+		void EmpleadosToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			empleados empl = new empleados();
+			empl.Show();
+		}
 	}
+	
 }

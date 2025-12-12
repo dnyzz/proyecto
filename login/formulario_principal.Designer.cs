@@ -40,7 +40,7 @@ namespace login
 			this.factorialfibonacciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.areaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.perimetroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.circunferenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.volumen = new System.Windows.Forms.ToolStripMenuItem();
 			this.conversionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.boletaDeCalificacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.pasteleriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,7 +54,7 @@ namespace login
 									this.factorialfibonacciToolStripMenuItem,
 									this.areaToolStripMenuItem,
 									this.perimetroToolStripMenuItem,
-									this.circunferenciaToolStripMenuItem,
+									this.volumen,
 									this.conversionesToolStripMenuItem,
 									this.boletaDeCalificacionesToolStripMenuItem,
 									this.pasteleriaToolStripMenuItem,
@@ -77,42 +77,49 @@ namespace login
 			this.areaToolStripMenuItem.Name = "areaToolStripMenuItem";
 			this.areaToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
 			this.areaToolStripMenuItem.Text = "Area";
+			this.areaToolStripMenuItem.Click += new System.EventHandler(this.AreaToolStripMenuItemClick);
 			// 
 			// perimetroToolStripMenuItem
 			// 
 			this.perimetroToolStripMenuItem.Name = "perimetroToolStripMenuItem";
 			this.perimetroToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
 			this.perimetroToolStripMenuItem.Text = "perimetro";
+			this.perimetroToolStripMenuItem.Click += new System.EventHandler(this.PerimetroToolStripMenuItemClick);
 			// 
-			// circunferenciaToolStripMenuItem
+			// volumen
 			// 
-			this.circunferenciaToolStripMenuItem.Name = "circunferenciaToolStripMenuItem";
-			this.circunferenciaToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-			this.circunferenciaToolStripMenuItem.Text = "volumen";
+			this.volumen.Name = "volumen";
+			this.volumen.Size = new System.Drawing.Size(66, 20);
+			this.volumen.Text = "volumen";
+			this.volumen.Click += new System.EventHandler(this.CircunferenciaToolStripMenuItemClick);
 			// 
 			// conversionesToolStripMenuItem
 			// 
 			this.conversionesToolStripMenuItem.Name = "conversionesToolStripMenuItem";
 			this.conversionesToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
 			this.conversionesToolStripMenuItem.Text = "conversiones";
+			this.conversionesToolStripMenuItem.Click += new System.EventHandler(this.ConversionesToolStripMenuItemClick);
 			// 
 			// boletaDeCalificacionesToolStripMenuItem
 			// 
 			this.boletaDeCalificacionesToolStripMenuItem.Name = "boletaDeCalificacionesToolStripMenuItem";
 			this.boletaDeCalificacionesToolStripMenuItem.Size = new System.Drawing.Size(142, 20);
 			this.boletaDeCalificacionesToolStripMenuItem.Text = "boleta de calificaciones";
+			this.boletaDeCalificacionesToolStripMenuItem.Click += new System.EventHandler(this.BoletaDeCalificacionesToolStripMenuItemClick);
 			// 
 			// pasteleriaToolStripMenuItem
 			// 
 			this.pasteleriaToolStripMenuItem.Name = "pasteleriaToolStripMenuItem";
 			this.pasteleriaToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
 			this.pasteleriaToolStripMenuItem.Text = "pasteleria";
+			this.pasteleriaToolStripMenuItem.Click += new System.EventHandler(this.PasteleriaToolStripMenuItemClick);
 			// 
 			// empleadosToolStripMenuItem
 			// 
 			this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
 			this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
 			this.empleadosToolStripMenuItem.Text = "empleados";
+			this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.EmpleadosToolStripMenuItemClick);
 			// 
 			// formulario_principal
 			// 
@@ -132,7 +139,7 @@ namespace login
 		private System.Windows.Forms.ToolStripMenuItem pasteleriaToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem boletaDeCalificacionesToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem conversionesToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem circunferenciaToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem volumen;
 		private System.Windows.Forms.ToolStripMenuItem perimetroToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem areaToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem factorialfibonacciToolStripMenuItem;
