@@ -42,7 +42,7 @@ txtContraseña.PasswordChar = '*';
 		
 		void BtnEntrarClick(object sender, EventArgs e)
 		{
-		if (txtUsuario.Text == "liseth" && txtContraseña.Text == "holaa")
+		if (txtUsuario.Text == "root" && txtContraseña.Text == "root")
 {
 
 			formulario_principal menu = new formulario_principal();
