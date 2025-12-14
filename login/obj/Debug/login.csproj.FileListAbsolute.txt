@@ -36,3 +36,4 @@ C:\Users\liset\proyecto\login\bin\Debug\login.pdb
 C:\Users\liset\proyecto\login\obj\Debug\login.exe
 C:\Users\liset\proyecto\login\obj\Debug\login.pdb
 C:\Users\liset\proyecto\login\obj\Debug\proyecto_final.pasteleria.resources
+C:\Users\liset\proyecto\login\obj\Debug\login.area.resources

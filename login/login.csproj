@@ -94,6 +94,9 @@
     <EmbeddedResource Include="aplicaciones.resx">
       <DependentUpon>aplicaciones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="area.resx">
+      <DependentUpon>area.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formulario_principal.resx">
       <DependentUpon>formulario_principal.cs</DependentUpon>
     </EmbeddedResource>

@@ -28,5 +28,44 @@ namespace login
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
-	}
+		
+
+		
+		void BtnCalcularClick(object sender, EventArgs e)
+		{
+	
+    try
+    {
+        double alto = double.Parse(txtAlto.Text);
+        double ancho = double.Parse(txtAncho.Text);
+        double area = 0;
+
+        if (rdbCuadrado.Checked)
+        {
+            area = alto * alto;
+        }
+        else if (rdbRectangulo.Checked)
+        {
+            area = alto * ancho;
+        }
+        else if (rdbTriangulo.Checked)
+        {
+            area = (alto * ancho) / 2;
+        }
+        else
+        {
+            MessageBox.Show("Selecciona una figura.");
+            return;
+        }
+
+        MessageBox.Show("El área es: " + area);
+    }
+    catch
+    {
+        MessageBox.Show("Ingresa valores numéricos válidos.");
+    }
+
+		}
 }
+}
+	
