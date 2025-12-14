@@ -112,6 +112,9 @@
     <EmbeddedResource Include="perimetro.resx">
       <DependentUpon>perimetro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="volumen.resx">
+      <DependentUpon>volumen.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
