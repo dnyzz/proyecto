@@ -97,6 +97,9 @@
     <EmbeddedResource Include="area.resx">
       <DependentUpon>area.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="conversiones.resx">
+      <DependentUpon>conversiones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formulario_principal.resx">
       <DependentUpon>formulario_principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pasteleria.resx">
       <DependentUpon>pasteleria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="perimetro.resx">
+      <DependentUpon>perimetro.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -36,12 +36,16 @@ namespace login
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.SuspendLayout();
 			// 
 			// conversiones
 			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Text = "conversiones";
+			this.ClientSize = new System.Drawing.Size(494, 315);
 			this.Name = "conversiones";
+			this.Text = "conversiones";
+			this.ResumeLayout(false);
 		}
 	}
 }

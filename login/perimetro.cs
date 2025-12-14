@@ -28,5 +28,39 @@ namespace login
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
-	}
+		
+		void BtnCalcularClick(object sender, EventArgs e)
+	
+
+{
+    try
+    {
+        if (rdbTrapecio.Checked)
+        {
+            double baseMayor = double.Parse(txtBaseMayor.Text);
+            double baseMenor = double.Parse(txtBaseMenor.Text);
+            double ladoIzq = double.Parse(txtLadoIzquierdo.Text);
+            double ladoDer = double.Parse(txtLadoDerecho.Text);
+            double perimetro = baseMayor + baseMenor + ladoIzq + ladoDer;
+            MessageBox.Show("Perímetro del trapecio: " + perimetro);
+        }
+        else if (rdbCirculo.Checked)
+        {
+            double radio = double.Parse(txtRadio.Text);
+            double circunferencia = 2 * Math.PI * radio;
+            MessageBox.Show("Circunferencia del círculo: " + circunferencia);
+        }
+        else
+        {
+            MessageBox.Show("Selecciona una figura.");
+        }
+    }
+    catch
+    {
+        MessageBox.Show("ingresa numeros correctos");
+    }
 }
+	
+		}
+	}
+

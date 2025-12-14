@@ -54,7 +54,7 @@ namespace login
         }
         else
         {
-            MessageBox.Show("Selecciona una figura.");
+            MessageBox.Show("Selecciona una figura");
             return;
         }
 
@@ -62,7 +62,7 @@ namespace login
     }
     catch
     {
-        MessageBox.Show("Ingresa valores numéricos válidos.");
+        MessageBox.Show("ingresa numeros validos");
     }
 
 		}
