@@ -40,3 +40,4 @@ C:\Users\liset\proyecto\login\obj\Debug\login.area.resources
 C:\Users\liset\proyecto\login\obj\Debug\login.conversiones.resources
 C:\Users\liset\proyecto\login\obj\Debug\login.perimetro.resources
 C:\Users\liset\proyecto\login\obj\Debug\login.volumen.resources
+C:\Users\liset\proyecto\login\obj\Debug\login.boleta.resources

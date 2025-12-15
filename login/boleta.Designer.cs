@@ -21,7 +21,7 @@ namespace login
         private System.Windows.Forms.Label lblParcial3;
         private System.Windows.Forms.TextBox txtParcial1;
         private System.Windows.Forms.TextBox txtParcial2;
-        private System.Windows.Forms.TextBox txtParcial3;
+        private System.Windows.Forms.TextBox txtTercerParcial;
 
         private System.Windows.Forms.Label lblGrado;
         private System.Windows.Forms.ComboBox cboGrado;
@@ -37,7 +37,6 @@ namespace login
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnSalir;
 
-        private System.Windows.Forms.DataGridView dgvCalificaciones;
 
         private System.Windows.Forms.Label lblPromedioFinal;
         private System.Windows.Forms.TextBox txtPromedioFinal;
@@ -62,7 +61,7 @@ namespace login
         	this.lblParcial3 = new System.Windows.Forms.Label();
         	this.txtParcial1 = new System.Windows.Forms.TextBox();
         	this.txtParcial2 = new System.Windows.Forms.TextBox();
-        	this.txtParcial3 = new System.Windows.Forms.TextBox();
+        	this.txtTercerParcial = new System.Windows.Forms.TextBox();
         	this.lblGrado = new System.Windows.Forms.Label();
         	this.cboGrado = new System.Windows.Forms.ComboBox();
         	this.lblEspecialidad = new System.Windows.Forms.Label();
@@ -74,23 +73,19 @@ namespace login
         	this.btnRegistrar = new System.Windows.Forms.Button();
         	this.btnCancelar = new System.Windows.Forms.Button();
         	this.btnSalir = new System.Windows.Forms.Button();
-        	this.dgvCalificaciones = new System.Windows.Forms.DataGridView();
-        	this.colAsignatura = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        	this.colP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        	this.colP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        	this.colP3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        	this.colPromedio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        	this.colAprobado = new System.Windows.Forms.DataGridViewCheckBoxColumn();
         	this.lblPromedioFinal = new System.Windows.Forms.Label();
         	this.txtPromedioFinal = new System.Windows.Forms.TextBox();
-        	((System.ComponentModel.ISupportInitialize)(this.dgvCalificaciones)).BeginInit();
+        	this.lblTercerParcial = new System.Windows.Forms.Label();
+        	this.txtPrimerParcial = new System.Windows.Forms.TextBox();
+        	this.txtSegundoParcial = new System.Windows.Forms.TextBox();
+        	this.listView1 = new System.Windows.Forms.ListView();
         	this.SuspendLayout();
         	// 
         	// lblTitulo
         	// 
         	this.lblTitulo.AutoSize = true;
         	this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-        	this.lblTitulo.Location = new System.Drawing.Point(20, 15);
+        	this.lblTitulo.Location = new System.Drawing.Point(12, 3);
         	this.lblTitulo.Name = "lblTitulo";
         	this.lblTitulo.Size = new System.Drawing.Size(306, 30);
         	this.lblTitulo.TabIndex = 0;
@@ -114,7 +109,7 @@ namespace login
         	// 
         	// lblParcial1
         	// 
-        	this.lblParcial1.Location = new System.Drawing.Point(0, 0);
+        	this.lblParcial1.Location = new System.Drawing.Point(345, 3);
         	this.lblParcial1.Name = "lblParcial1";
         	this.lblParcial1.Size = new System.Drawing.Size(100, 23);
         	this.lblParcial1.TabIndex = 3;
@@ -122,7 +117,7 @@ namespace login
         	// 
         	// lblParcial2
         	// 
-        	this.lblParcial2.Location = new System.Drawing.Point(0, 0);
+        	this.lblParcial2.Location = new System.Drawing.Point(345, 3);
         	this.lblParcial2.Name = "lblParcial2";
         	this.lblParcial2.Size = new System.Drawing.Size(100, 23);
         	this.lblParcial2.TabIndex = 5;
@@ -134,34 +129,33 @@ namespace login
         	this.lblParcial3.Size = new System.Drawing.Size(100, 23);
         	this.lblParcial3.TabIndex = 7;
         	this.lblParcial3.Text = "parcial 3";
-        	this.lblParcial3.Click += new System.EventHandler(this.LblParcial3Click);
         	// 
         	// txtParcial1
         	// 
-        	this.txtParcial1.Location = new System.Drawing.Point(0, 0);
+        	this.txtParcial1.Location = new System.Drawing.Point(345, 3);
         	this.txtParcial1.Name = "txtParcial1";
         	this.txtParcial1.Size = new System.Drawing.Size(100, 20);
         	this.txtParcial1.TabIndex = 4;
         	// 
         	// txtParcial2
         	// 
-        	this.txtParcial2.Location = new System.Drawing.Point(0, 0);
+        	this.txtParcial2.Location = new System.Drawing.Point(345, 3);
         	this.txtParcial2.Name = "txtParcial2";
         	this.txtParcial2.Size = new System.Drawing.Size(100, 20);
         	this.txtParcial2.TabIndex = 6;
         	// 
-        	// txtParcial3
+        	// txtTercerParcial
         	// 
-        	this.txtParcial3.Location = new System.Drawing.Point(596, 29);
-        	this.txtParcial3.Name = "txtParcial3";
-        	this.txtParcial3.Size = new System.Drawing.Size(60, 20);
-        	this.txtParcial3.TabIndex = 8;
+        	this.txtTercerParcial.Location = new System.Drawing.Point(596, 29);
+        	this.txtTercerParcial.Name = "txtTercerParcial";
+        	this.txtTercerParcial.Size = new System.Drawing.Size(60, 20);
+        	this.txtTercerParcial.TabIndex = 8;
         	// 
         	// lblGrado
         	// 
         	this.lblGrado.Location = new System.Drawing.Point(20, 95);
         	this.lblGrado.Name = "lblGrado";
-        	this.lblGrado.Size = new System.Drawing.Size(100, 23);
+        	this.lblGrado.Size = new System.Drawing.Size(44, 23);
         	this.lblGrado.TabIndex = 9;
         	this.lblGrado.Text = "Grado:";
         	// 
@@ -169,12 +163,12 @@ namespace login
         	// 
         	this.cboGrado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
         	this.cboGrado.Items.AddRange(new object[] {
-        	        	        	"1°",
-        	        	        	"2°",
-        	        	        	"3°",
-        	        	        	"4°",
-        	        	        	"5°",
-        	        	        	"6°"});
+        	        	        	"1",
+        	        	        	"2",
+        	        	        	"3",
+        	        	        	"4",
+        	        	        	"5",
+        	        	        	"6"});
         	this.cboGrado.Location = new System.Drawing.Point(70, 92);
         	this.cboGrado.Name = "cboGrado";
         	this.cboGrado.Size = new System.Drawing.Size(80, 21);
@@ -184,7 +178,7 @@ namespace login
         	// 
         	this.lblEspecialidad.Location = new System.Drawing.Point(170, 95);
         	this.lblEspecialidad.Name = "lblEspecialidad";
-        	this.lblEspecialidad.Size = new System.Drawing.Size(100, 23);
+        	this.lblEspecialidad.Size = new System.Drawing.Size(79, 23);
         	this.lblEspecialidad.TabIndex = 11;
         	this.lblEspecialidad.Text = "Especialidad:";
         	// 
@@ -193,10 +187,12 @@ namespace login
         	this.cboEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
         	this.cboEspecialidad.Items.AddRange(new object[] {
         	        	        	"Programación",
-        	        	        	"Mecatrónica",
-        	        	        	"Electrónica",
-        	        	        	"Logística",
-        	        	        	"Administración"});
+        	        	        	"Mecanica",
+        	        	        	"Contabilidad",
+        	        	        	"Alimentos",
+        	        	        	"Administración",
+        	        	        	"Soporte",
+        	        	        	"Cyberseguridad"});
         	this.cboEspecialidad.Location = new System.Drawing.Point(255, 92);
         	this.cboEspecialidad.Name = "cboEspecialidad";
         	this.cboEspecialidad.Size = new System.Drawing.Size(205, 21);
@@ -206,7 +202,7 @@ namespace login
         	// 
         	this.lblFecha.Location = new System.Drawing.Point(480, 95);
         	this.lblFecha.Name = "lblFecha";
-        	this.lblFecha.Size = new System.Drawing.Size(100, 23);
+        	this.lblFecha.Size = new System.Drawing.Size(74, 23);
         	this.lblFecha.TabIndex = 13;
         	this.lblFecha.Text = "Fecha actual:";
         	// 
@@ -222,7 +218,7 @@ namespace login
         	// 
         	this.lblAsignatura.Location = new System.Drawing.Point(20, 130);
         	this.lblAsignatura.Name = "lblAsignatura";
-        	this.lblAsignatura.Size = new System.Drawing.Size(100, 23);
+        	this.lblAsignatura.Size = new System.Drawing.Size(130, 23);
         	this.lblAsignatura.TabIndex = 15;
         	this.lblAsignatura.Text = "Asignatura o Submódulo:";
         	// 
@@ -231,12 +227,11 @@ namespace login
         	this.cboAsignatura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
         	this.cboAsignatura.Items.AddRange(new object[] {
         	        	        	"Matemáticas",
-        	        	        	"Física",
-        	        	        	"Química",
-        	        	        	"Programación I",
-        	        	        	"Programación II",
-        	        	        	"Bases de Datos",
-        	        	        	"Mecánica",
+        	        	        	"Socioemocional",
+        	        	        	"Humanidades",
+        	        	        	"Modulo1",
+        	        	        	"Modulo2",
+        	        	        	"Ecosistemas",
         	        	        	"Inglés"});
         	this.cboAsignatura.Location = new System.Drawing.Point(180, 127);
         	this.cboAsignatura.Name = "cboAsignatura";
@@ -250,6 +245,7 @@ namespace login
         	this.btnRegistrar.Size = new System.Drawing.Size(75, 23);
         	this.btnRegistrar.TabIndex = 17;
         	this.btnRegistrar.Text = "Registrar";
+        	this.btnRegistrar.Click += new System.EventHandler(this.BtnRegistrarClick);
         	// 
         	// btnCancelar
         	// 
@@ -267,73 +263,70 @@ namespace login
         	this.btnSalir.TabIndex = 19;
         	this.btnSalir.Text = "Salir";
         	// 
-        	// dgvCalificaciones
-        	// 
-        	this.dgvCalificaciones.AllowUserToAddRows = false;
-        	this.dgvCalificaciones.AllowUserToDeleteRows = false;
-        	this.dgvCalificaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-        	this.dgvCalificaciones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-        	        	        	this.colAsignatura,
-        	        	        	this.colP1,
-        	        	        	this.colP2,
-        	        	        	this.colP3,
-        	        	        	this.colPromedio,
-        	        	        	this.colAprobado});
-        	this.dgvCalificaciones.Location = new System.Drawing.Point(20, 176);
-        	this.dgvCalificaciones.Name = "dgvCalificaciones";
-        	this.dgvCalificaciones.RowHeadersVisible = false;
-        	this.dgvCalificaciones.Size = new System.Drawing.Size(795, 334);
-        	this.dgvCalificaciones.TabIndex = 20;
-        	// 
-        	// colAsignatura
-        	// 
-        	this.colAsignatura.HeaderText = "Asignatura";
-        	this.colAsignatura.Name = "colAsignatura";
-        	// 
-        	// colP1
-        	// 
-        	this.colP1.HeaderText = "Parcial 1";
-        	this.colP1.Name = "colP1";
-        	// 
-        	// colP2
-        	// 
-        	this.colP2.HeaderText = "Parcial 2";
-        	this.colP2.Name = "colP2";
-        	// 
-        	// colP3
-        	// 
-        	this.colP3.HeaderText = "Parcial 3";
-        	this.colP3.Name = "colP3";
-        	// 
-        	// colPromedio
-        	// 
-        	this.colPromedio.HeaderText = "Promedio";
-        	this.colPromedio.Name = "colPromedio";
-        	// 
-        	// colAprobado
-        	// 
-        	this.colAprobado.HeaderText = "Aprobado";
-        	this.colAprobado.Name = "colAprobado";
-        	// 
         	// lblPromedioFinal
         	// 
-        	this.lblPromedioFinal.Location = new System.Drawing.Point(20, 525);
+        	this.lblPromedioFinal.Location = new System.Drawing.Point(20, 433);
         	this.lblPromedioFinal.Name = "lblPromedioFinal";
-        	this.lblPromedioFinal.Size = new System.Drawing.Size(100, 23);
+        	this.lblPromedioFinal.Size = new System.Drawing.Size(80, 23);
         	this.lblPromedioFinal.TabIndex = 21;
         	this.lblPromedioFinal.Text = "PROMEDIO FINAL:";
         	// 
         	// txtPromedioFinal
         	// 
-        	this.txtPromedioFinal.Location = new System.Drawing.Point(140, 521);
+        	this.txtPromedioFinal.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+        	this.txtPromedioFinal.Location = new System.Drawing.Point(100, 430);
         	this.txtPromedioFinal.Name = "txtPromedioFinal";
         	this.txtPromedioFinal.ReadOnly = true;
         	this.txtPromedioFinal.Size = new System.Drawing.Size(80, 20);
         	this.txtPromedioFinal.TabIndex = 22;
         	// 
+        	// lblTercerParcial
+        	// 
+        	this.lblTercerParcial.Location = new System.Drawing.Point(452, 3);
+        	this.lblTercerParcial.Name = "lblTercerParcial";
+        	this.lblTercerParcial.Size = new System.Drawing.Size(100, 23);
+        	this.lblTercerParcial.TabIndex = 23;
+        	this.lblTercerParcial.Text = "Parcial 3:";
+        	// 
+        	// txtPrimerParcial
+        	// 
+        	this.txtPrimerParcial.Location = new System.Drawing.Point(345, 29);
+        	this.txtPrimerParcial.Name = "txtPrimerParcial";
+        	this.txtPrimerParcial.Size = new System.Drawing.Size(70, 20);
+        	this.txtPrimerParcial.TabIndex = 24;
+        	// 
+        	// txtSegundoParcial
+        	// 
+        	this.txtSegundoParcial.Location = new System.Drawing.Point(442, 29);
+        	this.txtSegundoParcial.Name = "txtSegundoParcial";
+        	this.txtSegundoParcial.Size = new System.Drawing.Size(75, 20);
+        	this.txtSegundoParcial.TabIndex = 25;
+        	// 
+        	// listView1
+        	// 
+        	this.listView1.View = System.Windows.Forms.View.Details;
+			this.listView1.FullRowSelect = true;
+			this.listView1.GridLines = true;
+			this.listView1.UseCompatibleStateImageBehavior = false;
+			this.listView1.Location = new System.Drawing.Point(137, 176);
+			this.listView1.Name = "listView1";
+			this.listView1.Size = new System.Drawing.Size(571, 237);
+			this.listView1.TabIndex = 26;
+
+this.listView1.Columns.Add("Asignatura", 120);
+this.listView1.Columns.Add("Parcial 1", 70);
+this.listView1.Columns.Add("Parcial 2", 70);
+this.listView1.Columns.Add("Parcial 3", 70);
+this.listView1.Columns.Add("Promedio", 80);
+this.listView1.Columns.Add("Aprobado", 80);
+
         	// boleta
         	// 
-        	this.ClientSize = new System.Drawing.Size(900, 600);
+        	this.ClientSize = new System.Drawing.Size(900, 475);
+        	this.Controls.Add(this.listView1);
+        	this.Controls.Add(this.txtSegundoParcial);
+        	this.Controls.Add(this.txtPrimerParcial);
+        	this.Controls.Add(this.lblTercerParcial);
         	this.Controls.Add(this.lblTitulo);
         	this.Controls.Add(this.lblNombre);
         	this.Controls.Add(this.txtNombreAlumno);
@@ -342,7 +335,7 @@ namespace login
         	this.Controls.Add(this.lblParcial2);
         	this.Controls.Add(this.txtParcial2);
         	this.Controls.Add(this.lblParcial3);
-        	this.Controls.Add(this.txtParcial3);
+        	this.Controls.Add(this.txtTercerParcial);
         	this.Controls.Add(this.lblGrado);
         	this.Controls.Add(this.cboGrado);
         	this.Controls.Add(this.lblEspecialidad);
@@ -354,21 +347,17 @@ namespace login
         	this.Controls.Add(this.btnRegistrar);
         	this.Controls.Add(this.btnCancelar);
         	this.Controls.Add(this.btnSalir);
-        	this.Controls.Add(this.dgvCalificaciones);
         	this.Controls.Add(this.lblPromedioFinal);
         	this.Controls.Add(this.txtPromedioFinal);
         	this.Name = "boleta";
         	this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
         	this.Text = "BOLETA DE CALIFICACIONES - CBTIS 217";
-        	((System.ComponentModel.ISupportInitialize)(this.dgvCalificaciones)).EndInit();
         	this.ResumeLayout(false);
         	this.PerformLayout();
         }
-        private System.Windows.Forms.DataGridViewCheckBoxColumn colAprobado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colPromedio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colP3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colP2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colP1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colAsignatura;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.TextBox txtSegundoParcial;
+        private System.Windows.Forms.TextBox txtPrimerParcial;
+        private System.Windows.Forms.Label lblTercerParcial;
     }
 }
