@@ -97,6 +97,9 @@
     <EmbeddedResource Include="area.resx">
       <DependentUpon>area.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="boleta.resx">
+      <DependentUpon>boleta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="conversiones.resx">
       <DependentUpon>conversiones.cs</DependentUpon>
     </EmbeddedResource>
